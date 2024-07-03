@@ -44,12 +44,11 @@
     "editor.quickSuggestions": {
         "comments": true,
         "strings": false,
-        "other": false
+        "other": false,
     },
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2,ColumnLimit: 0}",
     "[go]": {
         "editor.insertSpaces": false,
-        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
             "source.fixAll.stylelint": "explicit",
@@ -58,13 +57,10 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.defaultFormatter": "golang.go"
     },
-
     "markdown.preview.fontSize": 16,
-   
     "gitlens.advanced.messages": {
         "suppressGitMissingWarning": true
     },
-   
     "go.formatTool": "gofmt",
     "go.editorContextMenuCommands": {
         "toggleTestFile": false,
@@ -128,14 +124,14 @@
     "files.eol": "\n",
     "settingsSync.ignoredSettings": [],
     "C_Cpp.formatting": "clangFormat",
-    "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "gnuGlobal.autoUpdate": "Disabled",
     "gnuGlobal.completion": "Disabled",
     "gnuGlobal.encoding": "",
     "C_Cpp.intelliSenseEngineFallback": "enabled",
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
+    // "[cpp]": {
+    //     "editor.defaultFormatter": "ms-vscode.cpptools"
+    // },
     // 头部注释
     "fileheader.customMade": {
         // Author字段是文件的创建者 可以在specialOptions中更改特殊属性
@@ -172,29 +168,13 @@
     "debug.onTaskErrors": "showErrors",
     "editor.accessibilitySupport": "on",
     "git.autofetch": true,
-    "audioCues.diffLineDeleted": "off",
-    "audioCues.diffLineInserted": "off",
-    "audioCues.diffLineModified": "off",
-    "audioCues.lineHasBreakpoint": "off",
-    "audioCues.lineHasError": "off",
-    "audioCues.lineHasFoldedArea": "off",
-    "audioCues.lineHasInlineSuggestion": "off",
-    "audioCues.noInlayHints": "off",
-    "audioCues.notebookCellCompleted": "off",
-    "audioCues.notebookCellFailed": "off",
-    "audioCues.onDebugBreak": "off",
-    "audioCues.taskCompleted": "off",
-    "audioCues.taskFailed": "off",
-    "audioCues.terminalCommandFailed": "off",
-    "audioCues.terminalQuickFix": "off",
     "editor.wordWrapColumn": 150,
-    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrap": "bounded",
     "editor.codeActionsOnSave": {},
     "security.workspace.trust.startupPrompt": "never",
     "editor.formatOnSave": true,
     "update.mode": "manual",
-    "telemetry.telemetryLevel": "off",
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "telemetry.telemetryLevel": "all",
     "terminal.integrated.shellIntegration.suggestEnabled": true,
     "C_Cpp.inactiveRegionOpacity": 0.55,
     "editor.minimap.enabled": false,
@@ -206,7 +186,9 @@
     },
     "workbench.editor.empty.hint": "hidden",
     "C_Cpp.clang_format_sortIncludes": false,
-    "editor.defaultFormatter": "xaver.clang-format",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
     "clang-format.fallbackStyle": "Google",
     // "C_Cpp.clang_format_style": "Google",
     "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 2,ColumnLimit: 0}",
@@ -214,14 +196,13 @@
     "clang-format.executable": "/usr/bin/clang-format",
     "clang-format.assumeFilename": "/home/data/.clang-format",
     "settingsSync.ignoredExtensions": [],
-    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders":true,
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
     "editor.multiDocumentOccurrencesHighlight": true,
     "security.workspace.trust.enabled": false,
     "window.titleBarStyle": "custom",
     "cmake.showOptionsMovedNotification": false,
     "git.inputValidationSubjectLength": 400,
     "git.inputValidationLength": 400,
-    "C_Cpp.default.compilerPath": "",
     "diffEditor.maxComputationTime": 0,
     "editor.gotoLocation.multipleDefinitions": "goto",
     "workbench.editor.tabSizingFixedMaxWidth": 200,
@@ -234,7 +215,57 @@
     "editor.stickyScroll.enabled": true,
     "workbench.editor.wrapTabs": false,
     "editor.cursorSmoothCaretAnimation": "on",
-    "git.untrackedChanges": "separate"
-    
-    
+    "git.untrackedChanges": "separate",
+    "editor.formatOnType": true,
+    "accessibility.signals.lineHasError": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasFoldedArea": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasBreakpoint": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+        "sound": "off"
+    },
+    "accessibility.signals.terminalQuickFix": {
+        "sound": "off"
+    },
+    "accessibility.signals.onDebugBreak": {
+        "sound": "off"
+    },
+    "accessibility.signals.noInlayHints": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.terminalCommandFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineInserted": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineDeleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineModified": {
+        "sound": "off"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "codeium.enableConfig": {
+        "*": true,
+        "ignore": true,
+        "Log": true
+    }
 }
